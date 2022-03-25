@@ -57,11 +57,11 @@
     },
     "contenido_malta": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "contenido_lupulos": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "contenido_levadura": {
       "type": "string",
@@ -69,7 +69,7 @@
     },
     "contenido_otros": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "contenido_por_unidad": {
       "type": "string",
@@ -78,11 +78,11 @@
     },
     "contenido_abv": {
       "type": "string",
-      "unique": true
+      "unique": false
     },
     "contenido_ibu": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "stock": {
       "type": "integer",
@@ -91,7 +91,7 @@
     "imagen_barril_card": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -99,7 +99,7 @@
     "imagenes_barril_carrusel": {
       "type": "media",
       "multiple": true,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -109,7 +109,8 @@
       "enum": [
         "tipoCerveza",
         "packMixto"
-      ]
+      ],
+      "required": true
     }
   }
 }
