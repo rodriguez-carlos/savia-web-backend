@@ -89,20 +89,27 @@
       "required": true
     },
     "imagen_barril_card": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "imagenes_barril_carrusel": {
+      "required": true,
       "allowedTypes": [
         "images"
-      ],
+      ]
+    },
+    "imagenes_barril_carrusel": {
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "tipoCerveza",
+        "packMixto"
+      ]
     }
   }
 }
